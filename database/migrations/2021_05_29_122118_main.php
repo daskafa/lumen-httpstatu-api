@@ -19,7 +19,6 @@ class Main extends Migration
             $table->integer('category_id');
             $table->string('message');
             $table->string('information');
-            $table->timestamps();
         });
     }
 

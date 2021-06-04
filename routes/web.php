@@ -1,6 +1,7 @@
 <?php
 
 /** @var \Laravel\Lumen\Routing\Router $router */
+
 use App\Models\Main;
 /*
 |--------------------------------------------------------------------------
@@ -13,24 +14,13 @@ use App\Models\Main;
 |
 */
 
-$router->get('/api/v1/test/test', function (){
-   return Main::find(1)->getCategory->information;
-});
 
-
-$router->get('/api/v1/status', function (){
+$router->get('/', function (){
     return response()->json([
-        'message' => 'HTTP Statü Kodları',
-        'content' => \App\Models\Main::with('getCategory')->get(),
+        'Uyarı' => 'Lütfen URL e /api/v1/status/statuKodu giriniz.',
+        'Mesaj' => 'HTTP Statü Kodları',
+        'Tümü' => Main::all(),
     ]);
 });
 
-
 $router->get('/api/v1/status/{code}', 'MainController@show');
-
-//$router->get('/api/v1/products', 'ProductController@showAll');
-//$router->get('/api/v1/product-category', 'ProductController@showProductCategory');
-//$router->get('/api/v1/products/{id}', 'ProductController@show');
-//$router->post('/api/v1/products/', 'ProductController@save');
-//$router->put('/api/v1/products/{id}', 'ProductController@update');
-//$router->delete('/api/v1/products/{id}', 'ProductController@delete');
