@@ -3,14 +3,14 @@ Popüler HTTP statü kodları hakkında bilgi alabileceğimiz, kendimi geliştir
 
 ------------
 
-###Nasıl Çalışır?
+### Nasıl Çalışır?
 - Repoyu kendi bilgisayarına indir.
 - Ana dizinde olan *newLumenDB.sql* dosyasını veritabanına import et.
 - Komut satırından *composer install* komutunu çalıştır.
 - Ana dizinde olan *.env* dosyasını kendi ayarlarına göre düzenle.
 
 ------------
-###Denemek İçin:
+### Denemek İçin:
 `http://www.daskafa.com/api/v1/status/100`
 
 ------------
