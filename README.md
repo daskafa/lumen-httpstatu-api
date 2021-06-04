@@ -8,8 +8,15 @@ Popüler HTTP statü kodları hakkında bilgi alabileceğimiz, kendimi geliştir
 - Ana dizinde olan *newLumenDB.sql* dosyasını veritabanına import et.
 - Komut satırından *composer install* komutunu çalıştır.
 - Ana dizinde olan *.env* dosyasını kendi ayarlarına göre düzenle.
+- Komut satırına *php -S localhost:8000 -t public* yazarak projeyi ayağa kaldır.
 
 ------------
+### Fotoğraf Örneği
+![](statu.png)
+
+------------
+
+
 ### Denemek İçin:
 `http://www.daskafa.com/api/v1/status/100`
 
